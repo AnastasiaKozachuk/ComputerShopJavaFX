@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="780.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.Customer.CustomerOrdersController">
+   <children>
+       <TableView fx:id="main_table" layoutX="5.0" layoutY="212.0" prefHeight="560.0" prefWidth="990.0" />
+       <Button fx:id="order_info_field" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="44.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="231.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Інформація по замовленню" textAlignment="CENTER" textFill="#363535">
+           <font>
+               <Font name="Constantia" size="13.0" />
+           </font>
+       </Button>
+      <Button fx:id="count_summa_field" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="121.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="231.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Сумма закуплених продуктів" textAlignment="CENTER" textFill="#363535">
+         <font>
+            <Font name="Constantia" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

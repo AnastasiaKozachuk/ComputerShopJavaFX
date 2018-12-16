@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane maxHeight="585.0" maxWidth="400.0" minHeight="434.0" minWidth="400.0" prefHeight="434.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.Manager.GoodUpdateControler">
+
+    <children>
+        <AnchorPane layoutY="43.0" maxHeight="555.0" maxWidth="410.0" minHeight="406.0" minWidth="410.0" prefHeight="406.0" prefWidth="410.0" style="-fx-background-color: #4c4c4c;">
+            <children>
+                <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="352.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="122.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Зберегти" textAlignment="CENTER" textFill="#363535">
+                    <font>
+                        <Font name="Constantia" size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="151.0" layoutY="14.0" text="Оновити товар">
+            <font>
+                <Font name="Constantia" size="14.0" />
+            </font>
+        </Label>
+        <VBox layoutX="42.0" layoutY="70.0" prefHeight="322.0" prefWidth="316.0" spacing="15.0">
+            <children>
+            <ComboBox fx:id="articleIdList" prefHeight="25.0" prefWidth="155.0" promptText="Артикул товару">
+               <VBox.margin>
+                  <Insets left="80.0" />
+               </VBox.margin>
+            </ComboBox>
+                <TextField fx:id="prod_name_field" promptText="Повна назва товару" />
+                <TextField fx:id="minstock_field" promptText="Мінімальний сток" />
+                <TextField fx:id="instock_field" promptText="В наявності" />
+                <TextField fx:id="price_field" promptText="Ціна" />
+                <ComboBox fx:id="deliv_disc_field" prefHeight="25.0" prefWidth="156.0" promptText="Поставки припинені">
+                    <VBox.margin>
+                        <Insets left="80.0" />
+                    </VBox.margin>
+                </ComboBox>
+                <ComboBox fx:id="categoryList" prefHeight="25.0" prefWidth="156.0" promptText="Категорія">
+                    <VBox.margin>
+                        <Insets left="80.0" />
+                    </VBox.margin>
+                </ComboBox>
+                <ComboBox fx:id="manufactList" prefHeight="25.0" prefWidth="157.0" promptText="Постачальник">
+                    <VBox.margin>
+                        <Insets left="80.0" />
+                    </VBox.margin>
+                </ComboBox>
+            </children>
+        </VBox>
+    </children>
+
+</AnchorPane>

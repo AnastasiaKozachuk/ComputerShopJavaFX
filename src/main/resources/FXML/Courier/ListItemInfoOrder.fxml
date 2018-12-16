@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="200.0" maxWidth="400.0" minHeight="200.0" minWidth="400.0" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.Courier.ListItemInfoOrderController">
+
+    <children>
+        <Label layoutX="84.0" layoutY="14.0" text="Знайти інформацію про замовлення">
+            <font>
+                <Font name="Constantia" size="14.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutY="39.0" maxHeight="182.0" maxWidth="415.0" minHeight="170.0" minWidth="410.0" prefHeight="182.0" prefWidth="415.0" style="-fx-background-color: #4c4c4c;">
+            <children>
+                <Button fx:id="findButton" alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="113.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="122.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Знайти" textAlignment="CENTER" textFill="#363535">
+                    <font>
+                        <Font name="Constantia" size="13.0" />
+                    </font>
+                </Button>
+                <ComboBox fx:id="orderList" layoutX="130.0" layoutY="52.0" prefWidth="150.0" />
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

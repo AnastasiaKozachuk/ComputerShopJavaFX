@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="150.0" maxWidth="1000.0" minHeight="150.0" minWidth="1000.0" prefHeight="150.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.Courier.CourierHeaderController">
+    <children>
+        <HBox layoutX="5.0" layoutY="6.0" prefHeight="137.0" prefWidth="988.0">
+            <children>
+                <VBox prefHeight="137.0" prefWidth="353.0" spacing="25.0">
+                    <children>
+                        <Button fx:id="find_courier_button" mnemonicParsing="false" prefHeight="35.0" prefWidth="317.0" style="-fx-background-color: #5bcf58; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #4fb14c;" text="Знайти кур'єра за кодом замовлення">
+                            <VBox.margin>
+                                <Insets top="25.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Constantia" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="count_finished_orders" mnemonicParsing="false" prefHeight="35.0" prefWidth="316.0" style="-fx-background-color: #5bcf58; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-color: #4fb14c;" text="Порахувати кількість завершених замовлень">
+                            <font>
+                                <Font name="Constantia" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets left="25.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

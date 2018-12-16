@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="250.0" maxWidth="400.0" minHeight="250.0" minWidth="400.0" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.Manager.ListItemInOrderCreateController">
+    <children>
+        <AnchorPane layoutY="43.0" maxHeight="230.0" maxWidth="410.0" minHeight="230.0" minWidth="410.0" prefHeight="230.0" prefWidth="410.0" style="-fx-background-color: #4c4c4c;">
+            <children>
+                <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="151.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="122.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Зберегти" textAlignment="CENTER" textFill="#363535">
+                    <font>
+                        <Font name="Constantia" size="13.0" />
+                    </font>
+                </Button>
+                <HBox layoutX="37.0" layoutY="43.0" prefHeight="53.0" prefWidth="336.0" spacing="30.0">
+                    <children>
+                        <ComboBox fx:id="orderList" prefWidth="150.0" promptText="Код замовлення" />
+                        <ComboBox fx:id="prod_articl_list" prefWidth="150.0" promptText="Артикул товару" />
+                    </children>
+                </HBox>
+            <TextField fx:id="quantity_prod" layoutX="131.0" layoutY="103.0" promptText="Кількість товарів" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="125.0" layoutY="14.0" text="Новий список замовлень">
+            <font>
+                <Font name="Constantia" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

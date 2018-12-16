@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="585.0" maxWidth="400.0" minHeight="585.0" minWidth="400.0" prefHeight="585.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.Director.SupplierCreateController">
+    <children>
+        <AnchorPane layoutY="43.0" maxHeight="555.0" maxWidth="410.0" minHeight="555.0" minWidth="410.0" prefHeight="555.0" prefWidth="410.0" style="-fx-background-color: #4c4c4c;">
+            <children>
+                <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="507.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="122.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Зберегти" textAlignment="CENTER" textFill="#363535">
+                    <font>
+                        <Font name="Constantia" size="13.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="133.0" layoutY="14.0" text="Новий постачальник">
+            <font>
+                <Font name="Constantia" size="14.0" />
+            </font>
+        </Label>
+        <VBox layoutX="42.0" layoutY="70.0" prefHeight="436.0" prefWidth="316.0" spacing="15.0">
+            <children>
+                <TextField fx:id="edrpou_field" prefHeight="0.0" prefWidth="316.0" promptText="ЭДРПОУ" />
+            <TextField fx:id="org_name_field" promptText="Назва організації" />
+            <TextField fx:id="name_field" promptText="Ім'я контактної особи" />
+            <TextField fx:id="surname_field" promptText="Прізвище контактної особи" />
+            <TextField fx:id="patron_field" promptText="По-батькові контактної особи" />
+            <TextField fx:id="city_field" promptText="Місто" />
+            <TextField fx:id="street_field" promptText="Вулиця" />
+            <TextField fx:id="house_num_field" promptText="Номер будинку" />
+            <TextField fx:id="appertm_num_field" promptText="Номер офісу" />
+            <TextField fx:id="web_page_field" prefHeight="18.0" prefWidth="316.0" promptText="Веб-сторінка" />
+            <TextField fx:id="mfi_field" promptText="МФІ" />
+            <TextField fx:id="curr_acc_field" promptText="Номер банківського рахунку" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

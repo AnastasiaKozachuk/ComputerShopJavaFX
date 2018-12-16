@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4c4c4c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.AuthCustomerController">
+    <children>
+        <AnchorPane layoutY="75.0" maxHeight="340.0" maxWidth="620.0" minHeight="340.0" minWidth="620.0" prefHeight="340.0" prefWidth="620.0" style="-fx-background-color: fafafa;">
+            <children>
+            <VBox layoutX="162.0" layoutY="62.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="217.0" prefWidth="274.0" spacing="40.0">
+               <children>
+                  <VBox prefHeight="129.0" prefWidth="281.0" spacing="10.0">
+                     <children>
+                        <Label text="Введіть логін">
+                           <font>
+                              <Font name="Constantia" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="loginField" prefHeight="25.0" prefWidth="244.0" />
+                            <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" text="Введіть пароль" textAlignment="CENTER" textFill="#393939">
+                                <font>
+                                    <Font name="Constantia" size="14.0" />
+                                </font>
+                            </Label>
+                            <PasswordField fx:id="password_field" prefHeight="25.0" prefWidth="244.0" />
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="44.0" prefWidth="285.0" spacing="30.0">
+                     <children>
+                            <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="9.0" prefWidth="122.0" style="-fx-background-color: #5bcf60; -fx-border-color: #6b6b6b; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Реєстрація" textAlignment="CENTER" textFill="#363535">
+                         <font>
+                             <Font name="Constantia" size="14.0" />
+                         </font>
+                     </Button>
+                         <Button fx:id="enterButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="9.0" prefWidth="122.0" style="-fx-background-color: #5bcf60; -fx-border-color: #6b6b6b; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Увійти" textAlignment="CENTER" textFill="#363535">
+                             <font>
+                                 <Font name="Constantia" size="14.0" />
+                             </font>
+                         </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+        <Label layoutX="220.0" layoutY="26.0" text="Авторизація" textAlignment="CENTER" textFill="#5bcf5f">
+            <font>
+                <Font name="Constantia" size="28.0" />
+            </font>
+        </Label>
+    </children>
+    <effect>
+        <Blend />
+    </effect>
+</AnchorPane>

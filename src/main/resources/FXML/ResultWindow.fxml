@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="150.0" maxWidth="300.0" minHeight="150.0" minWidth="300.0" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.ResultWindowController">
+   <children>
+      <AnchorPane layoutX="100.0" layoutY="-1.0" maxHeight="171.0" maxWidth="310.0" minHeight="125.0" minWidth="202.0" prefHeight="164.0" prefWidth="220.0" style="-fx-background-color: #4c4c4c;">
+         <children>
+            <Label fx:id="result" layoutX="14.0" layoutY="65.0" text="Result" textFill="#58da4f">
+               <font>
+                  <Font name="Constantia" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="66.0" text="Результат">
+         <font>
+            <Font name="Constantia" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

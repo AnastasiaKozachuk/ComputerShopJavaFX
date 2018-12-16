@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4c4c4c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.ControllerAuth">
+    <children>
+        <AnchorPane layoutY="80.0" maxHeight="340.0" maxWidth="620.0" minHeight="340.0" minWidth="620.0" prefHeight="340.0" prefWidth="620.0" style="-fx-background-color: fafafa;">
+            <children>
+            <Label layoutX="252.0" layoutY="94.0" text="Введіть пароль" textFill="#393939">
+               <font>
+                  <Font name="Constantia" size="14.0" />
+               </font>
+            </Label>
+                <Button fx:id="authButton" alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="202.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="122.0" style="-fx-background-color: #5bcf60; -fx-border-color: #6b6b6b; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Далі" textAlignment="CENTER" textFill="#363535">
+                    <font>
+                        <Font name="Constantia" size="14.0" />
+                    </font>
+                </Button>
+            <PasswordField fx:id="password_field" layoutX="178.0" layoutY="126.0" prefHeight="25.0" prefWidth="244.0" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="220.0" layoutY="26.0" text="Авторизація" textAlignment="CENTER" textFill="#5bcf5f">
+            <font>
+                <Font name="Constantia" size="28.0" />
+            </font>
+        </Label>
+    </children>
+    <effect>
+        <Blend />
+    </effect>
+</AnchorPane>

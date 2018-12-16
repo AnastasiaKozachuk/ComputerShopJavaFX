@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="770.0" maxWidth="1000.0" minHeight="770.0" minWidth="1000.0" prefHeight="770.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.Customer.NewOrderController">
+   <children>
+      <AnchorPane layoutX="43.0" layoutY="59.0" prefHeight="609.0" prefWidth="915.0" style="-fx-background-color: #4c4c4c;">
+         <children>
+            <VBox layoutX="61.0" layoutY="64.0" prefHeight="502.0" prefWidth="281.0" spacing="30.0">
+               <children>
+                  <TextField fx:id="city_field" promptText="Місто" />
+                  <TextField fx:id="street_field" promptText="Вулиця" />
+                  <TextField fx:id="house_field" promptText="Будинок" />
+                  <TextField fx:id="appartment_field" promptText="Квартира" />
+                  <TextField fx:id="post_index__field" promptText="Поштовий індекс" />
+                  <ComboBox fx:id="delivery__field" prefHeight="25.0" prefWidth="287.0" promptText="Тип доставки" />
+                  <ComboBox fx:id="payment__field" prefHeight="25.0" prefWidth="284.0" promptText="Тип оплати" />
+                  <TextArea fx:id="wishes_field" prefHeight="121.0" prefWidth="281.0" promptText="Додаткові побажання" />
+               </children>
+            </VBox>
+            <Button fx:id="add_product" alignment="CENTER" contentDisplay="CENTER" layoutX="458.0" layoutY="525.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="162.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Додати товар" textAlignment="CENTER" textFill="#363535">
+               <font>
+                  <Font name="Constantia" size="13.0" />
+               </font>
+            </Button>
+            <VBox layoutX="404.0" layoutY="64.0" prefHeight="456.0" prefWidth="485.0" spacing="35.0">
+               <children>
+                  <TableView fx:id="product_table" prefHeight="296.0" prefWidth="485.0" />
+                  <ComboBox fx:id="product_name_field" prefHeight="25.0" prefWidth="284.0" promptText="Назва товару">
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="quantity_field" prefHeight="25.0" prefWidth="376.0" promptText="Кількість товару">
+                     <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <Button fx:id="clean_product" alignment="CENTER" contentDisplay="CENTER" layoutX="666.0" layoutY="525.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="162.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Очистити корзину" textAlignment="CENTER" textFill="#363535">
+               <font>
+                  <Font name="Constantia" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+       <Button fx:id="makeOrder_field" alignment="CENTER" contentDisplay="CENTER" layoutX="409.0" layoutY="706.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="184.0" style="-fx-background-color: #5bcf60; -fx-border-radius: 20; -fx-background-radius: 20; -fx-border-width: 2;" text="Зробити замовлення" textAlignment="CENTER" textFill="#363535">
+           <font>
+               <Font name="Constantia" size="13.0" />
+           </font>
+       </Button>
+      <Label fx:id="OrderSumm" layoutX="616.0" layoutY="718.0" text="0">
+         <font>
+            <Font name="Constantia" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.2041602465331279" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Design.Controllers.CourierWindowController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #4c4c4c;">
+            <children>
+                <VBox layoutX="-2.0" layoutY="157.0" prefHeight="484.0" prefWidth="267.0">
+                    <children>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="couriers" mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-background-color: none;" text="Кур'єри" textFill="#5bcf5f">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="clients" mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-background-color: none;" text="Клієнти" textFill="#5bcf5f">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="delivery_types" mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-background-color: none;" text="Типи поставок" textFill="#5bcf5f">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="payment_types" mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-background-color: none;" text="Типи оплати" textFill="#5bcf5f">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="menegers" mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-background-color: none;" text="Менеджери" textFill="#5bcf5f">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="orders" mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-background-color: none;" text="Замовлення" textFill="#5bcf5f">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="list_item_in_orders" mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-background-color: none;" text="Список товарів замовлення" textFill="#5bcf5f">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="order_status" mnemonicParsing="false" prefHeight="55.0" prefWidth="273.0" style="-fx-background-color: none;" text="Статуси замовлень" textFill="#5bcf5f">
+                            <font>
+                                <Font name="Constantia" size="17.0" />
+                            </font>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                    </children>
+                </VBox>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <VBox layoutX="6.0" layoutY="12.0" prefHeight="778.0" prefWidth="1020.0">
+                    <children>
+                        <AnchorPane fx:id="header_view" prefHeight="200.0" prefWidth="200.0" />
+                        <TableView fx:id="main_table" prefHeight="655.0" prefWidth="1020.0" />
+                    </children>
+                </VBox>
+            </children></AnchorPane>
+    </items>
+</SplitPane>
